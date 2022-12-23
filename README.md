@@ -9,3 +9,4 @@ or, if you are a zsh user:
 ````
 echo "alias bcd='source $PWD/bcd/bcd.sh'" >> .zshrc
 ````
+and restart your terminal
