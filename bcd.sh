@@ -25,6 +25,5 @@ for ((i=0; i<${#1}+1; i++)); do
 		allDots=false
 	fi
 done
-echo $cdTo
 
 cd $cdTo
