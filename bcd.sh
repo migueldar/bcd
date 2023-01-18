@@ -11,6 +11,9 @@ for ((i=0; i<${#1}+1; i++)); do
 		if [ $i -eq 0 ] || ! $allDots; then
 			cdTo+=$temp
 		else
+			if [ $currentDots == "1" ]; then
+				cdTo+=./
+			fi
 			for ((j=1; j<${currentDots}; j++)); do
 				cdTo+=../
 			done
@@ -22,5 +25,6 @@ for ((i=0; i<${#1}+1; i++)); do
 		allDots=false
 	fi
 done
+echo $cdTo
 
 cd $cdTo
